@@ -91,8 +91,8 @@ function App() {
         {price && (
           <>
             <div style={styles.priceBox}>
-              <strong style={styles.price}>{price.value.toLocaleString('es-VE', { maximumFractionDigits: 2 })}</strong>
-              <span style={styles.currency}>Bolívares</span>
+              <span style={styles.currency}>1 USDT</span>
+              <strong style={styles.price}>{price.value.toLocaleString('es-VE', { maximumFractionDigits: 2 })} bs</strong>
             </div>
             <p style={styles.meta}>Última actualización: {price.updatedAt}</p>
           </>
@@ -157,8 +157,8 @@ const styles = {
     color: '#24F239',
   },
   currency: {
-    fontSize: '1rem',
-    color: '#bae6fd',
+    fontSize: '0.8rem',
+    color: '#24F239',
   },
   meta: {
     color: '#cbd5e1',
